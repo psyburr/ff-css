@@ -1,0 +1,48 @@
+{
+    "manifest_version": 2,
+    "version": "20.118",
+    "name": "Burr & Blue",
+    "theme":
+    {
+        "images":
+        {
+            "additional_backgrounds": ["images/bg-009-f069b97f439938a011297c84464f0df6.svg"]
+        },
+        "properties":
+        {
+            "additional_backgrounds_alignment": ["top"],
+            "additional_backgrounds_tiling": ["repeat"]
+        },
+        "colors":
+        {
+            "bookmark_text": "rgb(204, 238, 255)",
+            "frame": "rgb(16, 31, 77)",
+            "icons": "rgb(136, 136, 255)",
+            "icons_attention": "rgb(20, 125, 251)",
+            "ntp_background": "rgb(60, 72, 109)",
+            "ntp_text": "rgb(255, 255, 255)",
+            "popup": "rgb(99, 109, 139)",
+            "popup_border": "rgb(136, 136, 255)",
+            "popup_highlight": "rgb(47, 52, 63)",
+            "popup_highlight_text": "rgb(199, 212, 221)",
+            "popup_text": "rgb(16, 31, 77)",
+            "sidebar": "rgb(20, 30, 60)",
+            "sidebar_border": "rgb(78, 255, 153)",
+            "sidebar_highlight": "rgb(20, 125, 251)",
+            "sidebar_highlight_text": "rgb(26, 41, 84)",
+            "sidebar_text": "rgb(199, 212, 221)",
+            "tab_background_separator": "rgb(20, 125, 251)",
+            "tab_background_text": "rgb(16, 31, 77)",
+            "tab_line": "rgb(44, 218, 183)",
+            "tab_loading": "rgb(78, 255, 153)",
+            "toolbar": "rgba(16, 31, 77, 0.65)",
+            "toolbar_bottom_separator": "rgb(20, 125, 251)",
+            "toolbar_field": "rgba(0, 0, 0, 0.3)",
+            "toolbar_field_highlight": "rgb(20, 125, 251)",
+            "toolbar_field_highlight_text": "rgb(20, 30, 60)",
+            "toolbar_field_separator": "rgb(44, 218, 183)",
+            "toolbar_field_text": "rgb(199, 212, 221)",
+            "toolbar_top_separator": "rgb(20, 125, 251)"
+        }
+    }
+}
