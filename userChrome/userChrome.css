@@ -1,0 +1,129 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+/*
+ * This file can be used to customize the look of Mozilla's user interface
+ * You should consider using !important on rules which you want to
+ * override default settings. 
+/*
+ * Edit this file and copy it as userChrome.css into your
+ * profile-directory/chrome/
+/*
+ * Do not remove the @namespace line -- it's required for correct functioning
+ */@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"); /* set default namespace to XUL */
+
+
+/* =====-=====-===== Location/URL & Search Bar =====-=====-===== */
+
+/* ---------- [fonts] ---------- */
+ #urlbar {
+    font-family: Hack !important;
+    font-size: 10pt !important;
+ }
+ #searchbar {
+    font-family: Hack !important;
+    font-size: 10pt !important;
+ }
+ #personal-bookmarks .bookmark-item > .toolbarbutton-text {
+    color: #2CDAB7 !important;
+    font-family: Hack;
+    font-size: 10pt !important;
+}
+
+/* ---------- [bar width] ---------- */
+#urlbar-container { max-width: 800px !important; }
+#search-container { max-width: 350px !important; }
+
+
+/* =====-=====-===== Hamburger Menu =====-=====-===== */
+/* ---------- [fonts] ---------- */
+#appMenu-popup .subviewbutton .toolbarbutton-text,
+#appMenu-popup .panel-arrowcontent,
+panelmultiview .toolbaritem-combined-buttons>label {
+    font-family: Hack !important;
+    font-size: 14px !important;
+}
+
+.panel-arrow {
+    fill: #1E2129 !important;
+    background: transparent !important;
+}
+.panel-subview-body {
+    color: #8888FF !important;
+    background: #1E2129 !important;
+    border-color: #ffffff !important;
+}
+.appMenu-zoomReset-button {
+    color: dodgerblue !important;
+    fill: dodgerblue !important;
+    border-color: #2CDAB7 !important;
+    border-radius: 0px !important;
+    background-color: #1E2129 !important;
+}
+.subviewbutton.panel-subview-footer {
+    background-color: #1E2129 !important;
+    border-top: 0px solid !important;
+}
+.panel-header {
+    border-bottom: 1px solid #1E2129 !important;
+    background: #1E2129 !important;
+}
+.panel-subview-footer,
+[class^="PanelUI-"] {
+    color: #8888FF !important;
+    background: #1E2129 !important;
+}
+.subviewbutton.panel-subview-footer {
+    background-color: #1E2129 !important;
+    border-top: 1px solid #1E2129 !important;
+}
+.appMenu-tp-separator,
+toolbarseparator {
+    display: visible !important;
+    border-color: #404040 !important;
+}
+.subviewbutton[shortcut]::after {
+    font-family: Hack !important;
+    color: dodgerblue !important;
+}
+.subviewbutton-nav::after {
+    fill: dodgerblue !important;
+}
+.PanelUI-subView .toolbaritem-combined-buttons>.subviewbutton-iconic>.toolbarbutton-text {
+    display: none !important;
+}
+/* ---------- [zoom control] ---------- */
+#appMenu-zoomReset-button label {
+    background: transparent !important;
+    color: #2CDAB7 !important;
+    border-radius: 0px !important;
+    font-family: "Hack Bold" !important;
+}
+#appMenu-zoomReset-button {
+    background: transparent !important;
+    color: #2CDAB7 !important;
+    border: 1px solid dodgerblue !important;
+    border-radius: 0px !important;
+}
+#appMenu-fullscreen-button {
+    background: transparent !important;
+    color: #2CDAB7 !important;
+    border: 0px solid #ffffff !important;
+    border-radius: 0px !important;
+}
+#appMenu-zoomReduce-button {
+    background: transparent !important;
+    color: #2CDAB7 !important;
+    border: 0px solid dodgerblue !important;
+    border-radius: 0px !important;
+}
+#appMenu-zoomEnlarge-button {
+    background: transparent !important;
+    color: #2CDAB7 !important;
+    border: 0px solid #ffffff !important;
+    border-radius: 0px !important;
+}
+.PanelUI-subView .toolbaritem-combined-buttons>.subviewbutton-iconic>.toolbarbutton-text {
+    display: none !important;
+
+/*=======================================================================================*/
