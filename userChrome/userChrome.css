@@ -19,6 +19,11 @@
  #urlbar {
     font-family: Hack !important;
     font-size: 10pt !important;
+    background: none !important;
+    box-shadow: none !important;
+    border: none !important;
+    text-align: center;
+
  }
  #searchbar {
     font-family: Hack !important;
@@ -29,6 +34,80 @@
     font-family: Hack;
     font-size: 10pt !important;
 }
+
+#urlbar:hover {
+  box-shadow: none !important;
+}
+
+
+/* Replace favicon on tabs with close button on hover */
+.tabbrowser-tab:not(:hover) .tab-close-button{ display:none; }
+.tabbrowser-tab:not([pinned]):hover .tab-close-button{ display:block !important; }
+
+
+.tabbrowser-tab:not([pinned]):hover  .tab-icon-image {
+  display: none !important;
+}
+
+.tabbrowser-tab:hover  .tab-throbber,
+.tabbrowser-tab:hover  .tab-icon-image,
+.tabbrowser-tab:hover .tab-sharing-icon-overlay,
+.tabbrowser-tab:hover  .tab-icon-overlay,
+.tabbrowser-tab:hover  .tab-label-container,
+.tabbrowser-tab:hover  .tab-icon-sound {
+  -moz-box-ordinal-group: 2 !important;
+}
+
+.tabbrowser-tab .tab-close-button {
+  margin-left: -2px !important;
+  margin-right: 4px !important;
+}
+
+.tab-close-button:hover {
+    fill-opacity: 0 !important;
+}
+
+.tabbrowser-tab::after,
+.tabbrowser-tab::before {
+       border-left: none !important;
+       border-right: none !important;
+ }
+
+.scrollbutton-up[orient="horizontal"]~spacer{ border-width: 0px; opacity: 0 }
+
+
+/* [url bar only appear on hover]
+nav-bar {
+
+position: relative;
+z-index: 1;
+height: 4px;
+margin-bottom: -4px;
+opacity: 0;
+overflow: hidden;
+
+}
+nav-bar:hover {
+
+height: auto;
+margin-bottom: 0px;
+opacity: 1;
+overflow: hidden;
+
+}
+nav-bar:focus-within {
+
+height: auto;
+margin-bottom: 0px;
+opacity: 1;
+overflow: show;
+
+}
+content-deck{
+
+position:relative;
+z-index: 0;
+*/
 
 /* ---------- [bar width] ---------- */
 #urlbar-container { max-width: 800px !important; }
