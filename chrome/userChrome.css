@@ -1,3 +1,14 @@
+/* Example file enabling theme + some features */
+
+@import url(chrome/theme_color_variables.css);
+@import url(chrome/theme_sidebar.css);
+@import url(chrome/tab_close_button_always_on_hover.css);
+@import url(chrome/button_effect_scale_onclick.css);
+@import url(chrome/blank_page_background.css);
+@import url(chrome/page_action_buttons_on_hover.css);
+@import url(chrome/autohide_sidebar.css);
+@import url(chrome/button_effect_icon_glow.css);
+@import url(chrome/textual_content_navigation.css);
 /* This Source Code Form is subject to the terms of the Mozilla Public
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
@@ -28,6 +39,10 @@
  #searchbar {
     font-family: Hack !important;
     font-size: 10pt !important;
+    background: none !important;
+    box-shadow: none !important;
+    border: none !important;
+
  }
  #personal-bookmarks .bookmark-item > .toolbarbutton-text {
     color: #2CDAB7 !important;
@@ -40,78 +55,10 @@
 }
 
 
-/* Replace favicon on tabs with close button on hover */
-.tabbrowser-tab:not(:hover) .tab-close-button{ display:none; }
-.tabbrowser-tab:not([pinned]):hover .tab-close-button{ display:block !important; }
-
-
-.tabbrowser-tab:not([pinned]):hover  .tab-icon-image {
-  display: none !important;
-}
-
-.tabbrowser-tab:hover  .tab-throbber,
-.tabbrowser-tab:hover  .tab-icon-image,
-.tabbrowser-tab:hover .tab-sharing-icon-overlay,
-.tabbrowser-tab:hover  .tab-icon-overlay,
-.tabbrowser-tab:hover  .tab-label-container,
-.tabbrowser-tab:hover  .tab-icon-sound {
-  -moz-box-ordinal-group: 2 !important;
-}
-
-.tabbrowser-tab .tab-close-button {
-  margin-left: -2px !important;
-  margin-right: 4px !important;
-}
-
-.tab-close-button:hover {
-    fill-opacity: 0 !important;
-}
-
-.tabbrowser-tab::after,
-.tabbrowser-tab::before {
-       border-left: none !important;
-       border-right: none !important;
- }
-
-.scrollbutton-up[orient="horizontal"]~spacer{ border-width: 0px; opacity: 0 }
-
-
-/* [url bar only appear on hover]
-nav-bar {
-
-position: relative;
-z-index: 1;
-height: 4px;
-margin-bottom: -4px;
-opacity: 0;
-overflow: hidden;
-
-}
-nav-bar:hover {
-
-height: auto;
-margin-bottom: 0px;
-opacity: 1;
-overflow: hidden;
-
-}
-nav-bar:focus-within {
-
-height: auto;
-margin-bottom: 0px;
-opacity: 1;
-overflow: show;
-
-}
-content-deck{
-
-position:relative;
-z-index: 0;
-*/
 
 /* ---------- [bar width] ---------- */
-#urlbar-container { max-width: 800px !important; }
-#search-container { max-width: 350px !important; }
+#urlbar-container { max-width: 1000px !important; }
+#search-container { max-width: 250px !important; }
 
 
 /* =====-=====-===== Hamburger Menu =====-=====-===== */
