@@ -26,6 +26,13 @@
 
 /* =====-=====-===== Location/URL & Search Bar =====-=====-===== */
 
+/* ---------- [center bookmark toolbar] ---------- */
+#PlacesToolbarItems {
+  display: flex !important;
+  justify-content: center !important;
+}
+
+
 /* ---------- [fonts] ---------- */
  #urlbar {
     font-family: Hack !important;
