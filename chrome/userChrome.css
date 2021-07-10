@@ -1,3 +1,16 @@
+/* Example file enabling theme + some features */
+
+    @import url(chrome/theme_color_variables.css);
+    @import url(chrome/theme_sidebar.css);
+    @import url(chrome/tab_close_button_always_on_hover.css);
+    @import url(chrome/button_effect_scale_onclick.css);
+    @import url(chrome/blank_page_background.css);
+    @import url(chrome/page_action_buttons_on_hover.css);
+    @import url(chrome/autohide_sidebar.css);
+    @import url(chrome/button_effect_icon_glow.css);
+    @import url(chrome/textual_content_navigation.css);
+
+
 /* This Source Code Form is subject to the terms of the Mozilla Public
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
@@ -13,66 +26,6 @@
  */@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"); /* set default namespace to XUL */
 
 
-/* Example file enabling theme + some features */
-
-    @import url(chrome/theme_color_variables.css);
-    @import url(chrome/theme_sidebar.css);
-    @import url(chrome/tab_close_button_always_on_hover.css);
-    @import url(chrome/button_effect_scale_onclick.css);
-    @import url(chrome/blank_page_background.css);
-    @import url(chrome/page_action_buttons_on_hover.css);
-    @import url(chrome/autohide_sidebar.css);
-    @import url(chrome/button_effect_icon_glow.css);
-    @import url(chrome/textual_content_navigation.css);
-
-{
-/* ---------- 🎨QuietFox Customization 🎨 ---------- */
-    --tab-corner-rounding: 7px;
-    --menu-corner-rounding: 10px;
-    --menu-item-height: 30px;
-    --button-corner-rounding: 20px;
-    --animation-speed: 0.4s;
-}
-
-/* various Quietfox */
-
-    /* Bottom corner rounding for tabs, Remove this section if your tab bottom corners look bad */
-        tab[visuallyselected] .tab-background::before,
-        tab[visuallyselected] .tab-background::after {
-        content: "" !important;
-        display: inline !important;
-        position: absolute !important;
-        width: var(--tab-corner-rounding) !important;
-        height: var(--tab-corner-rounding) !important;
-        bottom: -1px !important;
-        pointer-events: none !important;
-        background-color: transparent !important;
-        transition: var(--animation-speed) !important;
-     }
-
-        tab[visuallyselected] .tab-background::before {
-        border-bottom-right-radius: var(--tab-corner-rounding) !important;
-        transform: translateX(calc(-1 * var(--tab-corner-rounding))) !important;
-        box-shadow: 4px 4px 0px 4px var(--toolbar-bgcolor) !important;
-        transition: var(--animation-speed) !important;
-     }
-
-      tab[visuallyselected] .tab-background::after {
-        border-bottom-left-radius: var(--tab-corner-rounding) !important;
-        right: 0px !important;
-        transform: translateX(calc(var(--tab-corner-rounding) + 1px)) !important;
-        box-shadow: -4px 4px 0px 4px var(--toolbar-bgcolor) !important;
-        transition: var(--animation-speed) !important;
-    }
-
-    /* This makes certain menus adapt to your toolbar text color. Can make menu text illegible in 
-    some transparent themes, remove if needed. */
-    panelview:not([extension]),
-    .panel-arrowcontent {
-    background-color: var(--toolbar-bgcolor) !important;
-    color: var(--toolbar-color) !important;
-    }
-   /* --------------------------------------------------------------------------------------- */
 /* -------------------- Transitions for some things -------------------- */
     toolbarbutton,
     .subviewbutton,
@@ -343,7 +296,7 @@ grid-template-rows: repeat(45, auto);
                 .menu-iconic-left {
                     margin: 0px 6px !important;
                 }
-               
+
                #BMB_bookmarksPopup menu[open] menupopup {
                     transform: translateY(1px) !important;
                 }
@@ -546,38 +499,4 @@ grid-template-rows: repeat(45, auto);
     .PanelUI-subView .toolbaritem-combined-buttons>.subviewbutton-iconic>.toolbarbutton-text {
         display: none !important;
     }
-/* ---------- [zoom control] ---------- */
-   #appMenu-zoomReset-button label {
-        background: transparent !important;
-        color: #2CDAB7 !important;
-        border-radius: 0px !important;
-        font-family: "Hack Bold" !important;
-    }
-    #appMenu-zoomReset-button {
-        background: transparent !important;
-        color: #2CDAB7 !important;
-        border: 1px solid dodgerblue !important;
-        border-radius: 0px !important;
-    }
-    #appMenu-fullscreen-button {
-        background: transparent !important;
-        color: #2CDAB7 !important;
-        border: 0px solid #ffffff !important;
-        border-radius: 0px !important;
-    }
-    #appMenu-zoomReduce-button {
-        background: transparent !important;
-        color: #2CDAB7 !important;
-        border: 0px solid dodgerblue !important;
-        border-radius: 0px !important;
-    }
-    #appMenu-zoomEnlarge-button {
-        background: transparent !important;
-        color: #2CDAB7 !important;
-        border: 0px solid #ffffff !important;
-        border-radius: 0px !important;
-    }
-    .PanelUI-subView .toolbaritem-combined-buttons>.subviewbutton-iconic>.toolbarbutton-text {
-        display: none !important;
-
 /*=======================================================================================*/
