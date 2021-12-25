@@ -2,12 +2,12 @@
 
     @import url(chrome/theme_color_variables.css);
     @import url(chrome/theme_sidebar.css);
-    @import url(chrome/tab_close_button_always_on_hover.css);
-    @import url(chrome/button_effect_scale_onclick.css);
+/*    @import url(chrome/tab_close_button_always_on_hover.css);*/
+/*    @import url(chrome/button_effect_scale_onclick.css);*/
     @import url(chrome/blank_page_background.css);
-    @import url(chrome/page_action_buttons_on_hover.css);
+/*    @import url(chrome/page_action_buttons_on_hover.css);*/
     @import url(chrome/autohide_sidebar.css);
-    @import url(chrome/button_effect_icon_glow.css);
+/*    @import url(chrome/button_effect_icon_glow.css);*/
     @import url(chrome/textual_content_navigation.css);
 
 
@@ -395,6 +395,9 @@ grid-template-rows: repeat(45, auto);
 
 /* =====-=====-===== Location/URL & Search Bar =====-=====-===== */
 
+#menu_unsortedBookmarks {
+ display: none !important;
+}
 
  #BMB_unsortedBookmarks {
   display: none !important;
