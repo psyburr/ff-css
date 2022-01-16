@@ -31,8 +31,8 @@
 /* #appMenu-library-recentlyClosedTabs > .restoreallitem,     /* Reopen All Tabs               */
 /* #appMenuRecentlyClosedWindows,                         /* Recently Closed Windows       */
 /* #appMenuRestoreSession,                                /* Restore Previous Session      */
-* #appMenuRestoreSession + toolbarseparator,             /*********** Separator ***********/
-* #appMenuClearRecentHistory,                            /* Clear Recent History…         */
+ #appMenuRestoreSession + toolbarseparator,             /*********** Separator ***********/
+ #appMenuClearRecentHistory,                            /* Clear Recent History…         */
 /* #appMenuClearRecentHistory + toolbarseparator,         /*********** Separator ***********/
 /* #panelMenu_recentHistory,                              /* Recent History (label)        */
 /* #appMenu_historyMenu,                                  /* Recent History (list)         */
