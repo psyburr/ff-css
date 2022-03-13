@@ -2,5 +2,5 @@
 /* Uses color from theme_colors if available */
 
 #tabbrowser-tabpanels{
-  background-color: var(--uc-light-bkgnd-color,rgb(46,54,69)) !important;
+  background-color: var(--uc-light-bkgnd-color,rgb(27,33,48)) !important;
 }
