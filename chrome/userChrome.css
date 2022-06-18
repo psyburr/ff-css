@@ -39,7 +39,7 @@
 /* -------------------- Style tab bar -------------------- */
 	/* change text color of muted tabs */
 .tabbrowser-tab[muted] .tab-label{
-  color: #8d02f2;
+  color: #ff1d6c;
 }
 
 #bookmarksMenuPopup {width: 320px !important}
