@@ -165,6 +165,7 @@ grid-template-rows: repeat(45, auto);
     }
 
  /* -------------------- Style context menus -------------------- */
+	#context-inspect-a11y { display:none !important;}
     #context-navigation,
     #context-sep-navigation,
     #context-bookmarklink,
@@ -178,10 +179,7 @@ grid-template-rows: repeat(45, auto);
     #context_moveTabOptions,
     #context_bookmarkTab,
     .bookmarks-actions-menuseparator,
-    .openintabs-menuitem {
-        display: none !important;
-    }
-
+    .openintabs-menuitem { display:none !important;}
     menupopup,
     menupopup menuitem,
     menupopup menu,
