@@ -38,9 +38,9 @@
     }
 /* -------------------- Style tab bar -------------------- */
 	/* change text color of muted tabs */
-.tabbrowser-tab[muted] .tab-label{
-  color: #ff1d6c;
-}
+.tabbrowser-tab[muted] .tab-label{  color: #ff1d6c;}
+	/* remove close button on tabs */
+.tab-close-icon { display: none !important; }
 
 #bookmarksMenuPopup {width: 320px !important}
 
