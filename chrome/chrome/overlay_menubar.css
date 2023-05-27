@@ -1,8 +1,11 @@
+/* Source file https://github.com/MrOtherGuy/firefox-csshacks/tree/master/chrome/overlay_menubar.css made available under Mozilla Public License v. 2.0
+See the above repository for updates as well as full license text. */
+
 /* Makes menubar appear as overlay in the top left corner */
 
 #toolbar-menubar{
   position: fixed;
-  display: block;
+  display: flex;
   top: 0;
   width: 100vw;
   height: initial !important;
@@ -11,18 +14,27 @@
 
 #toolbar-menubar[autohide="true"][inactive="true"]{ height: 0px !important; }
 
-:root[tabsintitlebar][sizemode="maximized"] #toolbar-menubar{ top: 8px; }
-
-#toolbar-menubar > .titlebar-buttonbox-container{ float: right; display: block }
+#toolbar-menubar > spacer{ flex-grow: 1 }
 #toolbar-menubar[inactive] > .titlebar-buttonbox-container{ display: none }
 
-#main-menubar{ height: calc(var(--tab-min-height) + 4px); background-color: var(--toolbar-bgcolor); }
+#main-menubar{
+  height: calc(var(--tab-min-height) +  2 * var(--tab-block-margin,0px));
+  background-color: var(--arrowpanel-background);
+  color: var(--arrowpanel-color);
+}
 
-#menubar-items{ -moz-box-orient: horizontal !important; }
+#menubar-items{
+  -moz-box-orient: horizontal !important; /* Fx <112 compatibility */
+  flex-direction: row !important;
+}
 #menubar-items::after{
   content: "";
-  display: -moz-box;
+  display: flex;
   width: 30px;
-  height: calc(var(--tab-min-height) + 4px);
-  background-image: linear-gradient(to right, var(--toolbar-bgcolor) 30%, transparent);
+  height: calc(var(--tab-min-height) +  2 * var(--tab-block-margin,0px));
+  background-image: linear-gradient(to right, var(--arrowpanel-background) 30%, transparent);
+}
+
+@media (-moz-gtk-csd-reversed-placement){
+  #toolbar-menubar[autohide="true"]:not([inactive]) > .titlebar-buttonbox-container{ display: none }  
 }

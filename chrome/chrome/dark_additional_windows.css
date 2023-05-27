@@ -1,3 +1,6 @@
+/* Source file https://github.com/MrOtherGuy/firefox-csshacks/tree/master/chrome/dark_additional_windows.css made available under Mozilla Public License v. 2.0
+See the above repository for updates as well as full license text. */
+
 /* Dark library, page-info and bookmark-properties */
 /* Color scheme matches default dark theme */
 
@@ -5,10 +8,18 @@
 
 @namespace xul url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 
-@-moz-document url-prefix(chrome://browser/content/places/),
+@-moz-document url(chrome://browser/content/places/places.xhtml),
+  url(chrome://browser/content/places/bookmarkProperties.xhtml),
+  url(chrome://global/content/commonDialog.xhtml),
+  url-prefix(chrome://browser/content/preferences/dialogs/),
+  url("chrome://mozapps/content/handling/dialog.xhtml"),
   url-prefix(chrome://browser/content/pageinfo/),
+  url-prefix(chrome://browser/content/sanitize.xhtml),
   url-prefix("chrome://mozapps/content/downloads"){
-  
+  :root{
+    background-color: #2b2a33 !important;
+    --in-content-box-background: #23222b !important;
+  }
   #placesToolbox,
   #placesView,
   #placesToolbar,
@@ -17,7 +28,6 @@
   dialog,
   tree{
     -moz-appearance: none !important;
-    background-color: rgb(50,50,52) !important;
     color: rgb(249,249,250) !important;
   }
     
@@ -25,12 +35,17 @@
   tree{
     background: transparent !important;
   }
+  
+  #imagecontainerbox{ background: url("chrome://global/skin/media/imagedoc-darknoise.png") !important }
+  
+  search-textbox,
   #searchFilter,
   menulist,
   input,  
   textbox,
   richlistbox,
   treecol,
+  treecolpicker,
   button,
   menu,
   #permList{
@@ -39,13 +54,12 @@
   }
   
   menulist{ border: 1px solid graytext; padding-inline-end: 4px }
-  menulist dropmarker{ filter: invert(1) }
+  dropmarker{ filter: invert(1) }
   menulist:hover{ border-color: highlight; background-color: rgba(255,255,255,0.1) }
     
   .menubar-left{ fill: currentColor; -moz-context-properties: fill; }
-  
-  #searchFilter,input,textbox,richlistbox{ background-color: rgba(0,0,0,0.2) !important; }
-  #searchFilter > input,input[readonly]{ background-color: transparent !important; }
+  #topBar,#searchFilter,search-textbox,input,textbox,richlistbox{ background-color: rgba(0,0,0,0.2) !important; }
+  input[mozactionhint="search"],input[readonly],td > input{ background-color: transparent !important; }
     
   treecol:not([hideheader]){ height: 24px; }
   treecol:hover{ filter: brightness(160%) }
@@ -61,8 +75,8 @@
   button{ padding: 3px }
   #placesMenu > menu{ border: none !important; }
     
-  input,button{ border: 1px solid graytext; border-radius: 3px }
-  input{ padding: 2px }
+  search-textbox,input,button{ border: 1px solid graytext; border-radius: 3px }
+  search-textbox,input{ padding: 2px }
 
 }
 
