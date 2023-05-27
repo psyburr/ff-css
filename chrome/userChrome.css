@@ -4,7 +4,6 @@
 /*  @import url(chrome/theme_toolbars.css); */
 /*  @import url(chrome/theme_sidebar.css);    */
 /*  @import url(chrome/theme_popups_and_menus.css); */
-    @import url(chrome/status_inside_urlbar.css);
 /*  @import url(chrome/navigation_buttons_inside_urlbar.css);   */
     @import url(chrome/tab_close_button_always_on_hover.css);
     @import url(chrome/tab_loading_progress_throbber.css);
@@ -459,7 +458,7 @@ grid-template-rows: repeat(45, auto);
     #appMenu-popup .panel-arrowcontent,
     panelmultiview .toolbaritem-combined-buttons>label {
         font-family: Fantasque Sans Mono !important;
-        font-size: 14px !important;
+        font-size: 12px !important;
     }
 
     .panel-arrow {

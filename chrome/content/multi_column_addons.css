@@ -43,7 +43,7 @@ See the above repository for updates as well as full license text. */
   @media (min-width:1720px){
     addon-list > section,
     recommended-addon-list{
-      grid-template-areas: "hd hd hd hd" "cd cd cd cd";
+      grid-template-areas: "hd hd hd" "cd cd cd";
     }
   }
 }
