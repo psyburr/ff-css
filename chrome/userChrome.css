@@ -1,13 +1,14 @@
 /* Example file enabling theme + some features */
 
-@import url(firefox-csshacks/chrome/theme_color_variables.css);
-@import url(firefox-csshacks/chrome/tab_close_button_always_on_hover.css);
-@import url(firefox-csshacks/chrome/tab_loading_progress_throbber.css);
-@import url(firefox-csshacks/chrome/blank_page_background.css);
-@import url(firefox-csshacks/chrome/hide_toolbox_top_bottom_borders.css);
-@import url(firefox-csshacks/chrome/button_effect_icon_glow.css);
-@import url(firefox-csshacks/chrome/textual_content_navigation.css);
-@import url(firefox-csshacks/chrome/round_ui_items.css);
+@import url(chrome/theme_color_variables.css);
+@import url(chrome/tab_close_button_always_on_hover.css);
+@import url(chrome/tab_loading_progress_throbber.css);
+@import url(chrome/blank_page_background.css);
+@import url(chrome/hide_toolbox_top_bottom_borders.css);
+@import url(chrome/button_effect_icon_glow.css);
+@import url(chrome/textual_content_navigation.css);
+@import url(chrome/round_ui_items.css);
+@import url(chrome/urlbar_centered_text.css);
 
 /* This Source Code Form is subject to the terms of the Mozilla Public
  * License, v. 2.0. If a copy of the MPL was not distributed with this
@@ -26,6 +27,7 @@
  */
 
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
 
 /* set default namespace to XUL */
 
